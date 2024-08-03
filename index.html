@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le Mariage de Marie et Paul</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#details-evenement">Détails de l'événement</a></li>
+          <li><a href="#programme">Programme</a></li>
+          <li><a href="#infos-pratiques">Informations Pratiques</a></li>
+          <li><a href="#rsvp">RSVP</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h1>Le Mariage de Marie et Paul</h1>
+        <p>Nous avons hâte de célébrer ce jour spécial avec vous !</p>
+      </div>
+    </header>
+
+    <main>
+        <section id="details-evenement">
+          <h2>Détails de l'événement</h2>
+          <img src="https://via.placeholder.com/600x400" alt="Photo de la cérémonie">
+          <p><strong>Date :</strong> 15 juin 2025</p>
+          <p><strong>Cérémonie :</strong> La cérémonie aura lieu à 14h00 à l'Église Saint-Étienne, 123 Rue de l'Église, 75001 Paris.</p>
+          <p><strong>Réception :</strong> La réception se tiendra à partir de 18h00 au Château de la Belle, 456 Route du Château, 75002 Paris.</p>
+        </section>
+
+        <section id="programme">
+          <h2>Programme de la journée</h2>
+          <table>
+            <thead>
+              <tr>
+                  <th>Heure</th>
+                  <th>Activité</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <td>14h00</td>
+                  <td>Cérémonie de mariage à l'Église Saint-Étienne</td>
+              </tr>
+              <tr>
+                  <td>15h30</td>
+                  <td>Photos de groupe dans le jardin de l'église</td>
+              </tr>
+              <tr>
+                  <td>16h00</td>
+                  <td>Cocktail et amuse-bouches au Château de la Belle</td>
+              </tr>
+              <tr>
+                  <td>18h00</td>
+                  <td>Dîner et toasts</td>
+              </tr>
+              <tr>
+                  <td>20h00</td>
+                  <td>Première danse et ouverture de la piste de danse</td>
+              </tr>
+              <tr>
+                  <td>22h00</td>
+                  <td>Buffet de desserts et café</td>
+              </tr>
+              <tr>
+                  <td>Minuit</td>
+                  <td>Lâcher de lanternes en papier</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="infos-pratiques">
+          <h2>Informations pratiques</h2>
+          <p><strong>Hébergements :</strong> Plusieurs options d'hébergement sont disponibles à proximité du château, incluant l'Hôtel Le Parisien et l'Auberge du Bonheur. Veuillez réserver à l'avance.</p>
+          <p><strong>Transport :</strong> Un service de navette sera disponible entre l'église et le château. Des parkings sont également disponibles sur place pour ceux qui préfèrent venir en voiture.</p>
+        </section>
+
+        <section id="rsvp">
+          <h2>Confirmez votre présence</h2>
+          <p>Merci de confirmer votre présence avant le 1er mai 2025. Vous pouvez remplir le formulaire ci-dessous pour confirmer votre présence.</p>
+          <form action="submit_rsvp.php" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="nombre-invites">Nombre d'invités :</label>
+            <input type="number" id="nombre-invites" name="nombre-invites" min="1" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit">Confirmer</button>
+          </form>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p><strong>Adresse e-mail :</strong> marieetpaul@example.com</p>
+          <p><strong>Téléphone :</strong> 01 23 45 67 89</p>
+        </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Marie et Paul</p>
+    </footer>
+</body>
+</html>
